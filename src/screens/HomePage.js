@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 function HomePage() {
     return(
@@ -7,9 +7,12 @@ function HomePage() {
             <Text style={styles.headingText}>Cultural Eats</Text>
             <Text style={styles.headingDescriptText}>Where you can discover new recipes from</Text>
             <Text style={styles.headingDescriptText}>different cultures all over the world!</Text>
-            <Button 
+            <Pressable style={styles.button} >
+                <Text>Let's Cook!</Text>
+            </Pressable>
+            {/* <Button 
                 title="Let's Cook!"
-            />
+            /> */}
 
         </View>
     )
@@ -39,6 +42,15 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: 'white',
   },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 50,
+    borderRadius: 4,
+    elevation: 3,
+    backgroundColor: 'green',
+  }
 });
 
 
