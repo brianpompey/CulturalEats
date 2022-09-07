@@ -1,5 +1,5 @@
 import React from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 function HomePage() {
     return(
@@ -7,7 +7,9 @@ function HomePage() {
             <Text style={styles.headingText}>Cultural Eats</Text>
             <Text style={styles.headingDescriptText}>Where you can discover new recipes from</Text>
             <Text style={styles.headingDescriptText}>different cultures all over the world!</Text>
-            <Pressable><Text>Let's Cook!</Text></Pressable>
+            <Button 
+                title="Let's Cook!"
+            />
 
         </View>
     )
