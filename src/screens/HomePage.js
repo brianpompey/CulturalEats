@@ -12,7 +12,7 @@ const HomePage = ({navigation}) => {
             <Text style={styles.headingText}>Cultural Eats</Text>
             <Text style={styles.headingDescriptText}>Where you can discover new recipes from</Text>
             <Text style={styles.headingDescriptText}>different cultures all over the world!</Text>
-            <Pressable style={styles.button} onPress={() => navigation.navigate('RecipeList')} >
+            <Pressable style={styles.button} onPress={() => navigation.navigate('RecipeCategories')} >
                 <Text>Let's Cook!</Text>
             </Pressable>
         </View>
