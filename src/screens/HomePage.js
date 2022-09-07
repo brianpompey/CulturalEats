@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 
 function HomePage() {
     return(
-        <View>
-            <Text>Hello World</Text>
+        <View styles={styles.container}>
+            <Text style={styles.headingText}>Cultural Eats</Text>
         </View>
     )
 
@@ -14,9 +14,16 @@ function HomePage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 24,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+  },
+  headingText: {
+    top: 80,
+    left: 110,
+    fontSize: 30,
+    color: '#FF0000',
   },
 });
 
