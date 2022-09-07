@@ -46,10 +46,10 @@ const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 50,
-    borderRadius: 4,
-    elevation: 3,
+    paddingVertical: 10,
+    paddingHorizontal: 40,
+    borderRadius: 10,
+    // elevation: 3,
     backgroundColor: 'green',
   }
 });
