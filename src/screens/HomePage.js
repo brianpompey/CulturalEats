@@ -1,19 +1,20 @@
 import React from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useNavigation } from '@react-navigation/native'
+
+
+
 
 function HomePage() {
+    const navigation = useNavigation();
     return(
         <View style={styles.container}>
             <Text style={styles.headingText}>Cultural Eats</Text>
             <Text style={styles.headingDescriptText}>Where you can discover new recipes from</Text>
             <Text style={styles.headingDescriptText}>different cultures all over the world!</Text>
-            <Pressable style={styles.button} >
+            <Pressable style={styles.button} onPress={navigation.navigate('RecipeList')} >
                 <Text>Let's Cook!</Text>
             </Pressable>
-            {/* <Button 
-                title="Let's Cook!"
-            /> */}
-
         </View>
     )
 
