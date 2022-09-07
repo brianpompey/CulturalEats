@@ -1,12 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 function HomePage() {
     return(
         <View style={styles.container}>
             <Text style={styles.headingText}>Cultural Eats</Text>
             <Text style={styles.headingDescriptText}>Where you can discover new recipes from</Text>
-            <Text style={styles.headingDescriptText}>       different cultures all over the world!</Text>
+            <Text style={styles.headingDescriptText}>different cultures all over the world!</Text>
+            <Pressable><Text>Let's Cook!</Text></Pressable>
+
         </View>
     )
 
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
   headingDescriptText: {
     // top: 130,
     // left: 50,
-    bottom: 100,
+    bottom: 90,
     fontSize: 15,
     color: 'white',
   },
